@@ -7,6 +7,6 @@ Web Portfolio
 
 # Day 2 
 - Delete Navbar Component and Update Layout
-
+- Add Image and Basic Details of Me
 
 
