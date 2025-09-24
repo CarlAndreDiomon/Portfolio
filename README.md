@@ -15,3 +15,4 @@ Web Portfolio
 - Edit Main page
 - Add Shadcn UI 
 - Add a accordion component from shadcn
+- Delete shadcn because of some conflict

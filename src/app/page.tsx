@@ -1,13 +1,12 @@
 import Image from "next/image";
 
-
 export default function Home() {
   return (
     <main className=" p-4 ">
       {/* Header Part */}
       <div className=" flex items-center justify-between ">
         <Image src={"/images/me.png"} alt="My Face" width={900} height={900} className=" w-40 dark:hidden" />
-        <Image src={"/images/medark.png"} alt="My Face" width={900} height={900} className=" w-40 hidden dark:block" />
+        <Image src={"/images/medark.png"} alt="My Face" width={900} height={900} className=" w-40 hidden dark:block " />
         <div>
           <h1 className="font-bold">Carl Andre R. Diomon</h1>
           <h2 className=" text-xs">Antique, Philippines</h2>
@@ -43,6 +42,7 @@ export default function Home() {
         </h1>
 
         <div className="grid gap-4 ">
+
           <div className="w-full h-full p-2 border border-gray-300 dark:border-gray-600 rounded-lg">
             <h1 className="font-bold ">
               Project 1
