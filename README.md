@@ -12,3 +12,5 @@ Web Portfolio
 # Day 3
 - Add Image and Edit Dark and Light system
 - Add Projects Section
+- Edit Main page
+- Add Shadcn UI 
