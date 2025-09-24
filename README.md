@@ -14,3 +14,4 @@ Web Portfolio
 - Add Projects Section
 - Edit Main page
 - Add Shadcn UI 
+- Add a accordion component from shadcn
