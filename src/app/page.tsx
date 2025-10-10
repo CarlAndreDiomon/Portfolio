@@ -80,9 +80,6 @@ export default function Home() {
                   Node.js
                 </h1>
 
-                <h1 className="text-xs border w-max p-1 rounded-sm md:text-sm">
-                  Next.js
-                </h1>
               </div>
             </div>
 
