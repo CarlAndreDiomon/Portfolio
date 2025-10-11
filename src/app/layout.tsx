@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { json } from "stream/consumers";
 
 
 const geistSans = Geist({
@@ -25,7 +26,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Carl Andre R. Diomon",
+              "url": "https://carlandrediomon.me",
+              "image": "/images/me.png",
+              "jobTitle": "Aspiring Software Engineer",
+              "AddressCountry": "PH",
+            })
+          }}
+        />
 
+
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiase  `}
       >
