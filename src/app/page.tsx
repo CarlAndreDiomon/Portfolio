@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRightToLineIcon, FacebookIcon, GithubIcon, InstagramIcon, LinkedinIcon, MailIcon, TwitchIcon } from "lucide-react";
 
 export default function Home() {
   return (
@@ -24,32 +26,34 @@ export default function Home() {
           </h1>
 
           <p className="text-sm md:text-base">
-            I am a 20 year old aspiring software engineer from Antique, Philippines.
-            I am currently studying at the University of Antique, pursuing a Bachelor
-            of Science in Information Technology. I have a passion for coding and
-            technology, and I am eager to learn and grow in the field of software engineering.
+            I am an aspiring Software Engineer currently pursuing a Bachelor of Science in Information Technology at the University of Antique in Antique, Philippines.
+            I am driven by a passion for solving problems and believe in the power of code to transform complex challenges into effective, working solutions.
 
             <br />
             <br />
-            I have experience in web development, particularly with Next.js and React.
-            I enjoy building projects that solve real-world problems and improve user
-            experiences. I am also interested in exploring other areas of software
-            engineering, such as mobile app development and machine learning.
+            My primary focus is on modern web application development, prioritizing efficiency and creating positive user experiences.
+            I am actively seeking out opportunities to apply and grow my technical knowledge and abilities, while eagerly exploring additional interests in
+            mobile application development and Machine Learning.
           </p>
         </div>
 
         {/* Projects - Body Part */}
-        <div className=" w-full h-full border  border-gray-300 dark:border-gray-600 dark:shadow-gray-500 shadow-sm p-4 mt-4 rounded-lg " >
-          <h1 className="font-bold text-lg md:text-xl">
-            Projects
+        <div className=" w-full h-full border  border-gray-300 dark:border-gray-600 dark:shadow-gray-500 shadow-sm p-4 mt-4 rounded-lg ">
+
+          <h1 className="font-bold text-lg md:text-xl flex justify-between p-2">
+            <span> Projects </span> <Link href="projects "><ArrowRightToLineIcon /> </Link>
           </h1>
+
+
 
           <div className="grid gap-4 ">
 
+            {/* Ilearn */}
             <div className="w-full h-full p-2 border border-gray-300 dark:border-gray-600 rounded-lg">
+
               {/* App name */}
-              <h1 className="font-bold md:text-lg">
-                I-Learn
+              <h1 className="font-bold md:text-lg pb-2">
+                I-Learn | 2025
               </h1>
 
               {/* Description */}
@@ -81,6 +85,36 @@ export default function Home() {
                 </h1>
 
               </div>
+
+            </div>
+
+            {/* Infot2 system */}
+            <div className="w-full h-full p-2 border border-gray-300 dark:border-gray-600 rounded-lg">
+
+              {/* App name */}
+              <h1 className="font-bold md:text-lg pb-2 flex justify-between">
+                Filipino Heritage System | 2024 <Link href="https://filipinoheritagesystem.carlandrediomon.me"><ArrowRightToLineIcon /></Link>
+              </h1>
+
+              {/* Description */}
+              <p className="text-sm md:text-base pb-1 mb-2">
+                A Filipino Heritage System designed to promote traditional Filipino delicacies, particularly kakanin.
+                This simple website features images, recipes, and step-by-step instructions for preparing various local
+                treats. It was developed as part of a 2nd-year college project, where I was responsible for the development
+                and deployment.
+              </p>
+
+              <br />
+
+              {/* Technologies used */}
+              <div className=" flex flex-wrap gap-2 mb-1">
+
+                <h1 className="text-xs border w-max p-1 rounded-sm md:text-sm">
+                  NextJS
+                </h1>
+
+              </div>
+
             </div>
 
           </div>
@@ -198,7 +232,9 @@ export default function Home() {
 
         {/* Engagement */}
         <div className="w-full h-full border border-gray-300 dark:border-gray-600 dark:shadow-gray-500 shadow-sm p-4 mt-4 rounded-lg">
-          <h1 className=" font-bold text-lg mb-2 md:text-xl"> Engagement </h1>
+
+          <h1 className=" font-bold text-lg mb-2 md:text-xl flex justify-between p-2">
+            <span> Engagement </span> <Link href="engagement" className=" text-2xl"> <ArrowRightToLineIcon /> </Link> </h1>
 
           <div className=" grid gap-4">
             <div>
@@ -226,6 +262,7 @@ export default function Home() {
             </div>
 
           </div>
+
         </div>
 
         {/*  Experience */}
@@ -245,7 +282,7 @@ export default function Home() {
 
             <div className="grid grid-cols-[1fr_auto] items-start">
               <div>
-                <h1 className="font-semibold md:text-lg">Hello World!</h1>
+                <h1 className="font-semibold md:text-lg">print("Hello World!")</h1>
                 <h2 className="text-xs md:text-base">Wrote my first line of code</h2>
               </div>
               <span className="ml-2 p-1 border rounded-lg text-xs font-normal md:text-base">2023</span>
@@ -254,14 +291,23 @@ export default function Home() {
         </div>
 
         {/* Contact info */}
-        <div>
+        <div className="w-full h-full border border-gray-300 dark:border-gray-600 dark:shadow-gray-500 shadow-sm p-4 mt-4 rounded-lg">
+          <h1 className="font-bold text-lg mb-2 md:text-xl">Let&apos;s Connect</h1>
 
+          <div className="flex gap-5 ">
+            <Link href="https://github.com/CarlAndreDiomon" ><GithubIcon /></Link>
+            <Link href="https://linkedin.com/in/carl-andre-rafols-diomon-b21b17347" ><LinkedinIcon /></Link>
+            <Link href="mailto:dcarlandrerafols@gmail.com" ><MailIcon /></Link>
+            <Link href="https://twitter.com/@Diomon_SoftEn" ><TwitchIcon /></Link>
+            <Link href="https://facebook.com/CarlAndreDiomon" ><FacebookIcon /></Link>
+            <Link href="https://instagram.com/soft_en07" ><InstagramIcon /></Link>
+          </div>
         </div>
 
         <footer className="flex justify-center items-center  bottom-0 w-full h-12 ">
           <h1>&copy; 2025 SoftEn. All Rights Reserved</h1>
         </footer>
       </div>
-    </main>
+    </main >
   );
 }
