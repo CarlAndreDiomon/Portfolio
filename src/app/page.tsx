@@ -282,7 +282,7 @@ export default function Home() {
 
             <div className="grid grid-cols-[1fr_auto] items-start">
               <div>
-                <h1 className="font-semibold md:text-lg">print("Hello World!")</h1>
+                <h1 className="font-semibold md:text-lg">print(&quot;Hello World!&quot;)</h1>
                 <h2 className="text-xs md:text-base">Wrote my first line of code</h2>
               </div>
               <span className="ml-2 p-1 border rounded-lg text-xs font-normal md:text-base">2023</span>
