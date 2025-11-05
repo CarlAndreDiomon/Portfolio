@@ -261,6 +261,15 @@ export default function Home() {
               </p>
             </div>
 
+            <div>
+              <h1 className=" font-semibold text-sm md:text-base">
+                2025 Hack4Gov 4 (October, 2025 – Iloilo, Philippines)
+              </h1>
+              <p>
+                •	Achieved 5th place
+              </p>
+            </div>
+
           </div>
 
         </div>
